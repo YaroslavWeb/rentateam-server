@@ -1,10 +1,7 @@
 import { ICategory } from 'interfaces/category';
 
-let staticPath = process.env.REACT_APP_STATIC_URL_DEV;
+const staticPath = 'https://rentateam-server-test.herokuapp.com/static/';
 
-if (process.env.NODE_ENV === 'production') {
-  staticPath = process.env.REACT_APP_STATIC_URL_PROD;
-}
 export const mockData: ICategory[] = [
   {
     id: '2csd2123',
