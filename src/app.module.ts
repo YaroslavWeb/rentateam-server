@@ -11,8 +11,8 @@ import { CartModule } from './cart/cart.module';
   imports: [
     CategoriesModule,
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', '../public'),
-      serveRoot: '/public/',
+      rootPath: join(__dirname, '..', '../static'),
+      serveRoot: '/static/',
     }),
     CartModule,
   ],
