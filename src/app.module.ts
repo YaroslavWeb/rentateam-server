@@ -9,11 +9,11 @@ import { CartModule } from './cart/cart.module';
 
 @Module({
   imports: [
-    CategoriesModule,
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', '../static'),
+      rootPath: join(__dirname, '../static'),
       serveRoot: '/static/',
     }),
+    CategoriesModule,
     CartModule,
   ],
   controllers: [AppController],
